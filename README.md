@@ -33,7 +33,6 @@ Best of luck
   - Styled Components
   - SASS
 
-- The key is in token.js, beacause when I upload the code to GitHub, it detects that there is a key in the .env and revokes it immediately.
 ### How to run app & test
 
 - To run the app, just run: "npm i", and then "npm start".
