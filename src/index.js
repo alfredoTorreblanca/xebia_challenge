@@ -13,6 +13,7 @@ import { setContext } from "@apollo/client/link/context";
 import { App } from "./Pages/App/App";
 
 //Constants
+import { GITHUB_API_TOKEN } from "./constants/token";
 
 //Styles
 import "./index.scss";
@@ -22,7 +23,7 @@ const httpLink = createHttpLink({
 });
 
 const authLink = setContext((_, { headers }) => {
-  const token = process.env.REACT_APP_GITHUB_API_TOKEN;
+  const token = GITHUB_API_TOKEN;
 
   return {
     headers: {
